@@ -249,7 +249,7 @@ public class AccelListener extends CordovaPlugin implements SensorEventListener 
         }
         this.setStatus(AccelListener.RUNNING);
 
-        if (this.accuracy >= SensorManager.SENSOR_STATUS_ACCURACY_MEDIUM) {
+        if (this.accuracy >= SensorManager.SENSOR_STATUS_ACCURACY_LOW) {
 
             // Save time that event was received
             this.timestamp = System.currentTimeMillis();
